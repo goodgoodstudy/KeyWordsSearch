@@ -1,6 +1,5 @@
 import os
 
-
 def get_file_list(file_path):
     dir_list = os.listdir(file_path)
     if not dir_list:
@@ -13,5 +12,4 @@ def get_file_list(file_path):
         print(dir_list)
         return dir_list
 
-
-get_file_list('/work/share/swim_bug/108331/IhuLog20200116153638/LOG_FILES/data/logger')
+get_file_list('')
