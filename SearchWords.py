@@ -9,7 +9,7 @@ version 1.0 自用
 import os
 import sys
 
-# 设定关键词keyword 和 注释 使用dict结构以便动态扩展
+# 设定关键词keyword 和 注释 使用dict结构以便动态扩展 随便加随便改
 keyword_dict = {'UiCallManager: onTelecomCallAdded = number': '新电话回调',
                 'TelecomCallListener onStateChanged': '电话状态改变回调',
                 'UiCallManager: onTelecomCallRemoved = number': '挂断回调'}
@@ -24,7 +24,7 @@ file_name_list = ['.txt', 'main.log']
 exclude_file_name_list = ['packet', '.gz ', 'pcap']
 
 # 指定一个search_path路径，把字符串留空，只初始化，如果不指定路径，默认为当前py脚本路径
-default_search_path = '/work/share/swim_bug/108331/IhuLog20200116153638/LOG_FILES/data/logger'
+default_search_path = '/work/share/swim_bug/GDCY-1873'
 
 
 # 准备工作完毕
