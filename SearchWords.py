@@ -10,9 +10,17 @@ import os
 import sys
 
 # 设定关键词keyword 和 注释 使用dict结构以便动态扩展 随便加随便改
-keyword_dict = {'UiCallManager: onTelecomCallAdded = number': '新电话回调',
-                'TelecomCallListener onStateChanged': '电话状态改变回调',
-                'UiCallManager: onTelecomCallRemoved = number': '挂断回调'}
+# keyword_dict = {'UiCallManager: onTelecomCallAdded = number': '新电话回调',
+#                 'TelecomCallListener onStateChanged': '电话状态改变回调',
+#                 'UiCallManager: onTelecomCallRemoved = number': '挂断回调'}
+
+# keyword_dict = {'downloadContacts: bluetoothDevice': '下载联系人',
+#                 'refreshDownloadStates, type:': '联系人下载状态'}
+
+keyword_dict = {'downloadContacts: bluetoothDevice': '下载联系人',
+                'refreshDownloadStates, type:': '联系人下载状态'}
+
+
 
 # 设定一个排除的exclude_word bb
 exclude_word = ''
@@ -24,7 +32,7 @@ file_name_list = ['.txt', 'main.log']
 exclude_file_name_list = ['packet', '.gz ', 'pcap']
 
 # 指定一个search_path路径，把字符串留空，只初始化，如果不指定路径，默认为当前py脚本路径
-default_search_path = '/work/share/swim_bug/GDCY-1873'
+default_search_path = '/work/share/swim_bug/DCY11GKUI-4587/logger'
 
 
 # 准备工作完毕
